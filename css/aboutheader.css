@@ -1,0 +1,140 @@
+
+#aboutheader {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    color: #555F79;
+    min-height: 100vh;
+    padding: 0 0 0 10vw; 
+    position: relative;
+    margin: auto;
+    background-image: url("../img/Mois.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
+    background-blend-mode: lighten;
+    
+}
+
+#aboutheader .subtitle {
+    padding-top: 20px;
+    font-family: 'Montlight';
+    letter-spacing: 0.05em;
+    padding-bottom: 25px;
+    font-size: 2em;
+}
+
+
+#aboutheader h1 {
+
+    padding-top: 200px;
+    font-family: 'Mont';
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    max-width: 1000px;
+   
+}
+
+.bottom-box {
+    display:flex;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 200px;
+    font-size: 1.3em;
+}
+
+.bottom-box a {
+    font-size: 1.2rem;;
+    color: #555F79;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 500ms ease;
+}
+
+.bottom-box img {
+    width: 5%;
+    margin-left: .5em;
+
+}
+
+.bottom-box a:hover {
+    color: #A8B1CA;
+}
+
+@media screen and (max-width: 500px) {
+#aboutheader {
+    padding: 0 0 0 5vw; 
+    background-image: none;
+    background-size: 70%;
+  }
+
+.bottom-box {
+    padding-top: 200px;
+    font-size: 1.3em;
+}
+
+.bottom-box a {
+    font-size: 0.7em;
+}
+
+#aboutheader h1 { 
+    font-size: 1.5em;
+    padding-top: 150px;
+}
+
+#aboutheader .subtitle {
+    font-size: 1.5em;
+}
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+
+#aboutheader {
+    padding: 0 0 0 5vw; 
+    background-image: none;
+    background-size: 70%;
+  }
+
+.bottom-box {
+    padding-top: 300px;
+    font-size: 1.3em;
+}
+
+#aboutheader h1 {
+    font-size: 2.2em;
+    padding-top: 300px;
+  }
+}
+
+
+
+
+/*@media screen and (max-width: 800px) and (min-width: 500px) {
+
+#aboutheader {
+    padding: 0 0 0 5vw; 
+    background-image: none;
+    background-size: 70%;
+  }
+
+
+.bottom-box {
+    padding-top: 200px;
+    font-size: 1.3em;
+}
+
+#aboutheader .subtitle {
+    font-size: 1.5em;
+}
+
+#aboutheader h1 {
+    font-size: 1.5em;
+    padding-top: 200px;
+  }
+
+}
+*/

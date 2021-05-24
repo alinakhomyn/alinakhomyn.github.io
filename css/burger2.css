@@ -1,0 +1,55 @@
+.nav-icon {
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  width: 20px;
+  height: 10px;
+  position: relative;
+  
+}
+
+/*.nav-icon { position: absolute; left: 50%; top: 50%; }*/
+
+.nav-icon { cursor: pointer; padding: 10px 35px 16px 0px; }
+.nav-icon span, .nav-icon span:before, .nav-icon span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 27px;
+  background: #2E3A59;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.nav-icon span:before {
+  top: -9px; 
+}
+.nav-icon span:after {
+  bottom: -9px;
+}
+
+.nav-icon span, .nav-icon span:before, .nav-icon span:after {
+  transition: all 500ms ease-in-out;
+}
+.nav-icon.open span {
+  background-color: #2E3A59;
+}
+.nav-icon.open span:before, .nav-icon.open span:after {
+  top: 0;
+}
+.nav-icon.open span:before {
+  transform: rotate(45deg);
+}
+.nav-icon.open span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+
+  .nav-icon {
+    display: inline-block;
+    margin-top: 30px;
+    z-index: 99;
+  }
+}
